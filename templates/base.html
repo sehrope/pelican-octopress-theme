@@ -25,7 +25,11 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if FAVICON_FILENAME %}
+  <link href="{{ SITEURL }}/{{ FAVICON_FILENAME }}" rel="icon">
+  {% else %}
   <link href="{{ SITEURL }}/favicon.png" rel="icon">
+  {% end if %}
   <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
 
