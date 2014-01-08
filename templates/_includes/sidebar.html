@@ -1,4 +1,10 @@
 <aside class="sidebar">
+  {% if AUTHOR_ABOUT %}
+  <section>
+    <h1>About</h1>
+    {{ AUTHOR_ABOUT }}
+  </section>
+  {% endif %}
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
